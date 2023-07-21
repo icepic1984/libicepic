@@ -28,11 +28,6 @@
         nativeBuildInputs = [ dpkg ];
         #for build and runtime dependencies, stuff you need to build the package and to run it.
         buildInputs = [ stdenv.cc.cc.lib cmake];
-        #sourceRoot = ".";
-        #configurePhase = "cmake .";
-        #buildPhase = "make -j $NIX_BUILD_CORES";
-     
-        #installPhase = ''cmake --install .'';
 
         meta = with lib; {
           homepage = "http://icepic.de";
